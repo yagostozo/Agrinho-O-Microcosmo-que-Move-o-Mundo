@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Microcosmo que Move o Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="container header-container">
+            <h1>Microcosmo</h1>
+            <nav role="navigation" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+            <button id="alto-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        <section id="inicio" class="hero">
+            <div class="container hero-conteudo">
+                <h2>O universo invisível aos nossos olhos</h2>
+                <p>Células, bactérias e vírus moldam a vida na Terra. Explore a beleza e a complexidade do microcosmo que faz o macrocosmo funcionar.</p>
+                <a href="#galeria" class="btn-principal">Explorar Galeria</a>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria-section">
+            <div class="container">
+                <h2>Visões do Microcosmo</h2>
+                <p class="subtitulo">Imagens geradas dinamicamente via API do Unsplash</p>
+                
+                <div id="grid-galeria" class="grid-galeria" aria-live="polite">
+                    <p class="carregando">Carregando imagens do microcosmo...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 O Microcosmo que Move o Mundo. Imagens por <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
